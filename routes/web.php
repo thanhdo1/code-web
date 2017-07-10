@@ -12,9 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('master');
+    return view('index');
 });
-Route::get('index',[
-	'as'=>'trang-chu',
-	'uses'=> 'PageController@getIndex'
+Route::get('list',[
+	'uses'=>'SanPhamController@getList'
 	]);
